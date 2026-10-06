@@ -87,8 +87,10 @@ If you're interviewing for any role touching LLMs or Transformers, expect at lea
 | Misc     | \                      | Dataset, Model, Training and Testing with PyTorch | [train_test.py](supplements/train_test.py)   |
 | Module   | Vision: Segmentation   | Box IOU                                           | [box_iou.py](supplements/box_iou.py)         |
 | Module   | Vision                 | Convolution                                       | [convolution.py](supplements/convolution.py) |
-| Model    | Vision: Classification | AlexNet                                           | [alexnet.py](supplements/alexnet.py)         |
-| Model    | Vision: Classification | ResNet                                            | [resnet.py](supplements/resnet.py)           |
+| Model    | Vision: Classification | LeNet5                                           | [LeNet5.py](supplements/LeNet5.py)         |
+| Model    | Vision: Classification | AlexNet                                           | [AlexNet.py](supplements/AlexNet.py)         |
+| Model    | Vision: Classification | ResNet                                            | [ResNet50+.py](supplements/ResNet50+.py)           |
+| Model    | Vision: Classification | MobileNet V2                                            | [MobileNetV2.py](supplements/MobileNetV2.py)           |
 
 TODO:
 
@@ -99,7 +101,7 @@ TODO:
     - Xception: Depthwise Separable Convolution
     - DenseNet: Dense Block
     - MobileNet V1: Depthwise Separable Convolution
-    - \*MobileNet V2: Inverted Residual Block
+    - ~~\*MobileNet V2: Inverted Residual Block~~
     - \*ViT
 - Opject Detection
     - 2 Stage

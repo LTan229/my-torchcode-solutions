@@ -11,15 +11,20 @@ class AlexNet(nn.Module):
             nn.Conv2d(3, 96, kernel_size=11, stride=4), # (224 - 11)//4 + 1 = 54
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=3, stride=2), # (54 - 3)//2 + 1 = 26
+            
             nn.Conv2d(96, 256, kernel_size=5, padding=2), # 26 + 4 - 5 + 1 = 26
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=3, stride=2), # (26 - 3)//2 + 1 = 12
+            
             nn.Conv2d(256, 384, kernel_size=3, padding=1), # 12 + 2 - 3 + 1 = 12
             nn.ReLU(inplace=True),
+            
             nn.Conv2d(384, 384, kernel_size=3, padding=1), # 12
             nn.ReLU(inplace=True),
+            
             nn.Conv2d(384, 256, kernel_size=3, padding=1), # 12
             nn.ReLU(inplace=True),
+            
             nn.MaxPool2d(kernel_size=3, stride=2), # (12 - 2)//2 + 1 = 6
         )
         # self.avgpool = nn.AdaptiveAvgPool2d((6,6))
